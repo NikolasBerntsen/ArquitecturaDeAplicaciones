@@ -1,6 +1,5 @@
 package com.example.microservicio.controllers;
 
-import com.example.microservicio.security.JwtService;
 import com.example.microservicio.dto.LoginDTO;
 import com.example.microservicio.dto.UserDTO;
 import com.example.microservicio.model.User;
@@ -18,8 +17,7 @@ public class ControllerUser {
     @Autowired
     private UserService userService;
 
-    @Autowired
-    private JwtService jwtService;
+
 
     @PostMapping("/crear")
     public ResponseEntity<?> createUser(@RequestBody UserDTO userDTO) {
@@ -34,14 +32,11 @@ public class ControllerUser {
         }
     }
 
-    @GetMapping("/login")
+    @PostMapping("/login")
     public User getUser(@RequestBody LoginDTO loginDTO) {
         return userService.login(loginDTO);
     }
 
 
-    @GetMapping("/token")
-    public String token() {
-        return jwtService.generateToken("test@mail.com");
-    }
+
 }
