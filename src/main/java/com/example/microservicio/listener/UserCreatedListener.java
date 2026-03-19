@@ -1,4 +1,5 @@
-package com.example.microservicio.messaging;
+package com.example.microservicio.listener;
+
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
@@ -13,6 +14,5 @@ public class UserCreatedListener {
 
         // lógica
     }
-
 
 }

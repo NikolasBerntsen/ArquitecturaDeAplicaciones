@@ -1,4 +1,4 @@
-package com.example.microservicio.messaging;
+package com.example.microservicio.config;
 
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;

@@ -1,6 +1,7 @@
 package com.example.microservicio.messagingPublicar;
 
-import com.example.microservicio.messaging.RabbitMQConfig;
+import com.example.microservicio.config.RabbitMQConfig;
+import com.example.microservicio.event.UserCreatedEvent;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Component;
 

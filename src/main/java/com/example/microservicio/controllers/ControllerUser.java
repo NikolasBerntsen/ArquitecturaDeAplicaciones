@@ -2,7 +2,7 @@ package com.example.microservicio.controllers;
 
 import com.example.microservicio.dto.LoginDTO;
 import com.example.microservicio.dto.UserDTO;
-import com.example.microservicio.messagingPublicar.UserCreatedEvent;
+import com.example.microservicio.event.UserCreatedEvent;
 import com.example.microservicio.messagingPublicar.UserEventPublisher;
 import com.example.microservicio.model.User;
 import com.example.microservicio.service.UserService;

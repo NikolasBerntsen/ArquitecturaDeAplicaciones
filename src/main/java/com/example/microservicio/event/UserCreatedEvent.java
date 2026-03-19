@@ -1,4 +1,4 @@
-package com.example.microservicio.messagingPublicar;
+package com.example.microservicio.event;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
